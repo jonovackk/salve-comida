@@ -1,0 +1,19 @@
+/* Pequenos ajustes fora do Tailwind (opcional) */
+html, body {
+  height: 100%;
+}
+
+button:disabled {
+  opacity: 0.7;
+}
+
+.modal-backdrop {
+  background: rgba(0,0,0,0.5);
+}
+
+.card-hover {
+  transition: box-shadow 0.2s ease;
+}
+.card-hover:hover {
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}

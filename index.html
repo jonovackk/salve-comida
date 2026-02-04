@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salve Comida</title>
+
+    <!-- Tailwind via CDN (porque seu layout usa classes do Tailwind) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- CSS separado -->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="bg-gray-50">
+    <div id="root"></div>
+
+    <!-- React + ReactDOM via CDN -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+    <!-- Babel para entender JSX no navegador -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Seu app em arquivo separado -->
+    <script type="text/babel" src="./app.js"></script>
+  </body>
+</html>
