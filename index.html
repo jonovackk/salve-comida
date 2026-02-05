@@ -5,25 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Salve Comida</title>
 
-    <!-- Tailwind via CDN (porque seu layout usa classes do Tailwind) -->
+    <!-- Tailwind via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- CSS separado -->
-    <link rel="stylesheet" href="./style.css?v=3" />
-<script type="text/babel" src="./app.js?v=7"></script>
-
+    <link rel="stylesheet" href="./style.css?v=4" />
   </head>
   <body class="bg-gray-50">
     <div id="root"></div>
 
-    <!-- React + ReactDOM via CDN -->
+    <!-- React + ReactDOM -->
     <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
 
-    <!-- Babel para entender JSX no navegador -->
+    <!-- Babel -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
-    <!-- Seu app em arquivo separado -->
-    <script type="text/babel" src="./app.js"></script>
+    <!-- App (somente uma vez, com versionamento) -->
+    <script type="text/babel" src="./app.js?v=8"></script>
   </body>
 </html>
