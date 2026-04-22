@@ -2097,10 +2097,6 @@ function App() {
                           {formatQuantity(product.maxPerPerson, product.unit)}
                         </p>
                         <p>
-                          <span className="font-medium">Deve restar no estoque:</span>{" "}
-                          {formatQuantity(product.minRemainingAmount, product.unit)}
-                        </p>
-                        <p>
                           <span className="font-medium">Validade:</span>{" "}
                           {new Date(product.expiryDate).toLocaleDateString("pt-BR")}
                         </p>
@@ -2142,9 +2138,6 @@ function App() {
 
                             <p className="text-xs text-gray-500 mt-2">
                               Limite por pessoa: {formatQuantity(product.maxPerPerson, product.unit)}
-                            </p>
-                            <p className="text-xs text-gray-500">
-                              Deve restar no estoque: {formatQuantity(product.minRemainingAmount, product.unit)}
                             </p>
 
                             <div className="flex gap-2 mt-3">
