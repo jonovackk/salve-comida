@@ -1935,7 +1935,7 @@ function App() {
                           <span className="font-medium">Validade:</span>{" "}
                           {new Date(product.expiryDate).toLocaleDateString("pt-BR")}
                         </p>
-                        <p className="flex items-center gap-1">📍 {product.location}</p>
+                        <p className="flex items-center gap-1">{product.location}</p>
                         {product.description && (
                           <p className="text-gray-500 mt-2">{product.description}</p>
                         )}
@@ -1964,7 +1964,7 @@ function App() {
                           <p className="text-sm text-gray-600">
                             Quantidade: {formatQuantity(request.amount, product.unit)}
                           </p>
-                          <p className="text-sm text-gray-600">📍 {product.location}</p>
+                          <p className="text-sm text-gray-600">{product.location}</p>
                           <p className="text-xs text-gray-500">
                             Reservado em: {new Date(request.createdAt).toLocaleString("pt-BR")}
                           </p>
@@ -2104,7 +2104,7 @@ function App() {
                           <span className="font-medium">Validade:</span>{" "}
                           {new Date(product.expiryDate).toLocaleDateString("pt-BR")}
                         </p>
-                        <p className="flex items-center gap-1">📍 {product.location}</p>
+                        <p className="flex items-center gap-1">{product.location}</p>
                         <p>
                           <span className="font-medium">Doador:</span> {product.donorName}
                         </p>
@@ -2244,7 +2244,7 @@ function App() {
                       <p className="text-sm text-gray-600">
                         Total: {formatQuantity(product.stockAmount, product.unit)}
                       </p>
-                      <p className="text-sm text-gray-600">📍 {product.location}</p>
+                      <p className="text-sm text-gray-600">{product.location}</p>
                       <p className="text-xs text-gray-500 mt-1">
                         Validade: {new Date(product.expiryDate).toLocaleDateString("pt-BR")}
                       </p>
@@ -2271,7 +2271,7 @@ function App() {
                       <p className="text-sm text-gray-600">
                         Quantidade: {formatQuantity(request.amount, product.unit)}
                       </p>
-                      <p className="text-sm text-gray-600">📍 {product.location}</p>
+                      <p className="text-sm text-gray-600">{product.location}</p>
                       <p className="text-xs text-gray-500 mt-1">
                         Validade: {new Date(product.expiryDate).toLocaleDateString("pt-BR")}
                       </p>
